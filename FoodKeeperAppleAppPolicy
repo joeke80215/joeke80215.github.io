@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FoodKeeper App (食材管家)– Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6;margin:1.5rem;max-width:800px}
+    h1,h2{color:#222}
+    table{width:100%;border-collapse:collapse;margin:1rem 0}
+    th,td{border:1px solid #ccc;padding:.5rem;text-align:left;vertical-align:top}
+    th{background:#f2f2f2}
+  </style>
+</head>
+<body>
+
+<h1>FoodKeeper App – Privacy Policy</h1>
+<p><strong>Effective Date:</strong> 9 July 2025</p>
+
+<h2>1. Scope</h2>
+<p>This policy explains how the <strong>FoodKeeper</strong> iOS/iPadOS app (“the App”) collects, uses, stores and protects information when you use it on an Apple device. It applies only to this App, not to any third-party websites or services.</p>
+
+<h2>2. Data We Collect</h2>
+<p>Unless we obtain your additional consent, all data below <strong>is not linked</strong> to your identity and is used only for the stated purposes.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data category</th>
+      <th>Specific items</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>User Content</strong></td>
+      <td>Food photos, scan results, notes</td>
+      <td>Ingredient scanning, inventory reminders, sharing</td>
+    </tr>
+    <tr>
+      <td><strong>Device Identifiers</strong></td>
+      <td>Random device ID (e.g., IdentifierForVendor)</td>
+      <td>Service operation, security, abuse prevention</td>
+    </tr>
+    <tr>
+      <td><strong>Usage Data</strong></td>
+      <td>Product interactions (buttons, screens), other usage patterns</td>
+      <td>Feature optimisation, UI improvement, troubleshooting</td>
+    </tr>
+    <tr>
+      <td><strong>Diagnostics</strong></td>
+      <td>Crash logs, performance metrics, error reports</td>
+      <td>Crash analysis, performance monitoring</td>
+    </tr>
+    <tr>
+      <td><strong>Other Data</strong></td>
+      <td>Anonymised analytics tags</td>
+      <td>Product personalisation, statistical reporting</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>3. Purpose of Data Use</h2>
+<ol>
+  <li><strong>Core functionality</strong>&nbsp;– inventory management, expiry reminders, family sharing.</li>
+  <li><strong>Product analytics&nbsp;&amp;&nbsp;personalisation</strong>&nbsp;– improve features and tailor tips based on anonymised usage.</li>
+  <li><strong>Security&nbsp;&amp;&nbsp;protection</strong>&nbsp;– detect abnormal behaviour, prevent attacks, ensure stability.</li>
+</ol>
+
+<h2>4. Data Processing &amp; Sharing</h2>
+<ul>
+  <li><strong>Local-first storage</strong>&nbsp;– food data, photos and scans stay on your device or iCloud (if you enable “iCloud Sync”).</li>
+  <li><strong>Third-party services</strong>
+    <ul>
+      <li><strong>Apple iCloud</strong>&nbsp;– cross-device access when sync is on.</li>
+      <li><strong>Firebase Crashlytics</strong> &amp; <strong>Firebase Analytics</strong>&nbsp;– crash logs and anonymised events (hashed device ID only, no personal identity).</li>
+    </ul>
+  </li>
+  <li><strong>Legal disclosure</strong>&nbsp;– data is shared only when required by law or with your explicit consent.</li>
+  <li><strong>No selling</strong>&nbsp;– we do not sell or rent any data that could identify you.</li>
+</ul>
+
+<h2>5. Retention Period</h2>
+<ul>
+  <li><strong>User content</strong>&nbsp;– deleted immediately when you remove it or reset the app.</li>
+  <li><strong>Usage &amp; diagnostic data</strong>&nbsp;– kept up to 24&nbsp;months for historical analysis, then anonymised or erased.</li>
+</ul>
+
+<h2>6. Your Rights</h2>
+<p>Via the in-app settings or by contacting us you may:</p>
+<ul>
+  <li><strong>Access</strong> the data we hold about you.</li>
+  <li><strong>Correct / Delete</strong> inaccurate or unwanted data.</li>
+  <li><strong>Withdraw consent</strong> – turn off iCloud sync or analytics to stop related collection.</li>
+  <li><strong>Data portability</strong> – receive an exportable copy (GDPR Art.&nbsp;20).</li>
+</ul>
+
+<h2>7. Data Security</h2>
+<p>We use AES-256 end-to-end encryption (for iCloud sync), TLS in transit and a least-privilege model with access auditing to reduce unauthorised-access risk.</p>
+
+<h2>8. Children’s Privacy</h2>
+<p>The App is for a general audience and not intended for children under 13. If we learn we have collected such personal data, we delete it immediately.</p>
+
+<h2>9. Changes to This Policy</h2>
+<p>If we make material changes we will notify you prominently in the App and update the effective date. Where required, we will seek your consent at least 7 days in advance.</p>
+
+<h2>10. Contact</h2>
+<p><strong>汲光點工作室</strong><br>
+Email: <a href="mailto:jiidea0116@gmail.com">jiidea0116@gmail.com</a>
+</p>
+
+<h2>11. Intellectual Property &amp; Ownership</h2>
+<p>
+  All rights, title, and interest in and to the App—including but not limited to its source code, design, user interface, logos, trademarks, and any accompanying documentation—are and shall remain the exclusive property of <strong>Jiidea Studio</strong> or its licensors. You receive only a limited, revocable licence to install and use the App in accordance with this Policy and any applicable Terms of Service; no other rights are transferred or granted.
+</p>
+
+<p>Using <strong>FoodKeeper</strong> signifies your acceptance of this Privacy Policy. If you disagree, please stop using and delete the App.</p>
+
+</body>
+</html>
