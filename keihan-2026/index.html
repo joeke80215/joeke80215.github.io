@@ -63,498 +63,122 @@ button{font:inherit}
   text-decoration:none;padding:8px 10px;border-radius:999px;font-weight:800;font-size:14px;color:var(--brown);
 }
 .nav-links a:hover,.nav-links a.active{background:var(--maple);color:white}
-
-.hero{
-  max-width:1180px;margin:24px auto 0;padding:0 20px;
-}
+.hero{max-width:1180px;margin:24px auto 0;padding:0 20px}
 .hero-card{
   position:relative;overflow:hidden;
   background:linear-gradient(135deg,#A63D32 0%,#D9653F 50%,#F0A64C 100%);
   color:white;border-radius:34px;padding:42px 34px;box-shadow:var(--shadow);
 }
-.hero-card:before,.hero-card:after{
-  content:"🍁";position:absolute;font-size:110px;opacity:.13;transform:rotate(-18deg)
-}
+.hero-card:before,.hero-card:after{content:"🍁";position:absolute;font-size:110px;opacity:.13;transform:rotate(-18deg)}
 .hero-card:before{right:4%;top:-28px}
 .hero-card:after{right:26%;bottom:-55px;transform:rotate(22deg)}
 .kicker{font-weight:900;letter-spacing:.1em;font-size:14px;opacity:.9}
 h1{font-size:clamp(34px,6vw,58px);line-height:1.08;margin:8px 0 14px;font-weight:950}
 .hero-sub{font-size:18px;font-weight:700;max-width:760px}
 .hero-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-.chip{
-  background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.28);
-  padding:8px 12px;border-radius:999px;font-weight:800
-}
-
+.chip{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.28);padding:8px 12px;border-radius:999px;font-weight:800}
+.trip-summary{max-width:1180px;margin:18px auto 0;padding:0 20px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.summary-card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:16px 18px;box-shadow:0 8px 20px rgba(99,63,47,.07);display:flex;gap:12px;align-items:flex-start}
+.summary-icon{width:42px;height:42px;flex:0 0 42px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,#FFF0C8,#FFD7B8);font-size:21px}
+.summary-label{font-size:14px;font-weight:900;color:var(--maple);letter-spacing:.04em}
+.summary-value{font-size:17px;font-weight:900;color:var(--ink);margin-top:2px}
+.summary-sub{font-size:16px;color:var(--muted);margin-top:2px}
 main{max-width:1180px;margin:auto;padding:24px 20px 70px}
 section{scroll-margin-top:88px;margin-top:28px}
 .section-head{display:flex;align-items:end;justify-content:space-between;gap:14px;margin-bottom:16px}
 .section-title{margin:0;font-size:30px;line-height:1.2;color:var(--maple-dark)}
 .section-note{color:var(--muted);font-weight:700}
-
 .grid{display:grid;gap:16px}
 .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
 .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
-.card{
-  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
-  padding:20px;box-shadow:0 8px 20px rgba(99,63,47,.06)
-}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:0 8px 20px rgba(99,63,47,.06)}
 .card h3{margin:0 0 8px;font-size:21px;color:var(--maple-dark)}
 .muted{color:var(--muted)}
-.highlight{
-  background:linear-gradient(135deg,#FFF2CC,#FFE7D4);border:1px solid #F1C785;
-}
-.overview-card{
-  position:relative;padding-top:24px;min-height:190px;
-}
-.day-badge{
-  display:inline-flex;align-items:center;gap:8px;background:var(--maple);color:#fff;
-  padding:6px 10px;border-radius:999px;font-weight:900;font-size:14px;margin-bottom:10px
-}
+.highlight{background:linear-gradient(135deg,#FFF2CC,#FFE7D4);border:1px solid #F1C785}
+.overview-card{position:relative;padding-top:24px;min-height:190px}
+.day-badge{display:inline-flex;align-items:center;gap:8px;background:var(--maple);color:#fff;padding:6px 10px;border-radius:999px;font-weight:900;font-size:14px;margin-bottom:10px}
 .city-tag{font-weight:900;color:var(--green)}
 .stat-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 .stat{background:#fff;border:1px dashed #D8B897;border-radius:12px;padding:6px 9px;font-size:14px;font-weight:800}
-
-.flight{
-  display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px
-}
+.flight{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px}
 .airport{text-align:center}
 .airport strong{font-size:28px;color:var(--maple-dark)}
 .flight-line{text-align:center;color:var(--orange);font-weight:950;font-size:22px}
 .flight-meta{margin-top:14px;padding-top:14px;border-top:1px dashed #DCC7B2}
-
 .accordion{display:grid;gap:14px}
-.day-card{
-  background:var(--paper);border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:var(--shadow)
-}
-.day-toggle{
-  width:100%;border:0;background:transparent;padding:22px;text-align:left;cursor:pointer;
-  display:flex;align-items:center;justify-content:space-between;gap:16px
-}
+.day-card{background:var(--paper);border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:var(--shadow)}
+.day-toggle{width:100%;border:0;background:transparent;padding:22px;text-align:left;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .day-toggle h3{margin:0;font-size:24px;color:var(--maple-dark)}
 .day-toggle small{display:block;color:var(--muted);font-size:14px;margin-top:3px}
-.toggle-icon{
-  width:38px;height:38px;border-radius:50%;display:grid;place-items:center;
-  background:var(--sage);font-weight:950;color:var(--green);transition:.25s
-}
+.toggle-icon{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--sage);font-weight:950;color:var(--green);transition:.25s}
 .day-card.open .toggle-icon{transform:rotate(45deg);background:var(--gold)}
 .day-content{display:none;padding:0 22px 22px}
 .day-card.open .day-content{display:block}
-.route{
-  background:#F6F0E6;border-radius:18px;padding:12px 14px;margin-bottom:14px;font-weight:800;color:var(--brown)
-}
+.route{background:#F6F0E6;border-radius:18px;padding:12px 14px;margin-bottom:14px;font-weight:800;color:var(--brown)}
 .timeline{position:relative;margin:6px 0 0 10px;padding-left:22px}
-.timeline:before{
-  content:"";position:absolute;left:5px;top:8px;bottom:8px;width:3px;
-  background:linear-gradient(var(--orange),var(--gold),var(--green));border-radius:4px
-}
+.timeline:before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:3px;background:linear-gradient(var(--orange),var(--gold),var(--green));border-radius:4px}
 .t-item{position:relative;padding:0 0 18px 18px}
-.t-item:before{
-  content:"";position:absolute;left:-24px;top:7px;width:11px;height:11px;border-radius:50%;
-  background:var(--maple);border:3px solid var(--paper);box-shadow:0 0 0 2px var(--maple)
-}
+.t-item:before{content:"";position:absolute;left:-24px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--maple);border:3px solid var(--paper);box-shadow:0 0 0 2px var(--maple)}
 .time{font-weight:950;color:var(--maple-dark);font-size:16px}
 .activity{font-weight:900;font-size:17px;margin-top:2px}
 .transport{color:var(--muted);margin-top:3px}
-.callout{
-  border-left:5px solid var(--orange);background:#FFF2DE;padding:12px 14px;border-radius:12px;margin-top:10px
-}
-
+.callout{border-left:5px solid var(--orange);background:#FFF2DE;padding:12px 14px;border-radius:12px;margin-top:10px}
 .info-table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:#fff}
 .info-table th,.info-table td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);font-size:16px}
 .info-table th{background:#F7E7D8;color:var(--maple-dark);font-weight:900}
 .info-table tr:last-child td{border-bottom:0}
-
 .checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-.check{
-  display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--line);
-  padding:12px 14px;border-radius:14px
-}
+.check{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--line);padding:12px 14px;border-radius:14px}
 .check input{margin-top:5px;accent-color:var(--maple);width:18px;height:18px}
-.notice{
-  background:#EEF3E9;border:1px solid #C7D5BC;border-radius:18px;padding:15px 16px;color:#40513E
-}
-.footer{
-  text-align:center;color:var(--muted);padding:28px 16px 44px;font-size:14px
-}
-.backtop{
-  position:fixed;right:18px;bottom:18px;width:48px;height:48px;border-radius:50%;
-  border:0;background:var(--maple);color:white;font-size:22px;font-weight:900;box-shadow:var(--shadow);
-  cursor:pointer;display:none
-}
+.notice{background:#EEF3E9;border:1px solid #C7D5BC;border-radius:18px;padding:15px 16px;color:#40513E}
+.footer{text-align:center;color:var(--muted);padding:28px 16px 44px;font-size:14px}
+.backtop{position:fixed;right:18px;bottom:18px;width:48px;height:48px;border-radius:50%;border:0;background:var(--maple);color:white;font-size:22px;font-weight:900;box-shadow:var(--shadow);cursor:pointer;display:none}
 .backtop.show{display:block}
-
 @media(max-width:860px){
-  .menu-toggle{display:block}
-  .nav-inner{flex-wrap:wrap}
-  .nav-links{
-    display:none;width:100%;padding-top:8px;gap:8px
-  }
-  .nav-links.open{display:flex}
-  .nav-links a{background:#F7EEE4}
-  .grid-2,.grid-3{grid-template-columns:1fr}
-  .hero-card{padding:34px 24px}
-  .checklist{grid-template-columns:1fr}
+  .menu-toggle{display:block}.nav-inner{flex-wrap:wrap}.nav-links{display:none;width:100%;padding-top:8px;gap:8px}.nav-links.open{display:flex}.nav-links a{background:#F7EEE4}.grid-2,.grid-3{grid-template-columns:1fr}.trip-summary{grid-template-columns:1fr;padding-left:14px;padding-right:14px}.hero-card{padding:34px 24px}.checklist{grid-template-columns:1fr}
 }
-@media(max-width:560px){
-  body{font-size:16px}
-  main,.hero{padding-left:14px;padding-right:14px}
-  .hero-card{border-radius:26px;padding:30px 20px}
-  .flight{grid-template-columns:1fr}
-  .flight-line{transform:rotate(90deg);height:34px}
-  .section-title{font-size:26px}
-  .day-toggle h3{font-size:21px}
-  .day-toggle{padding:18px}
-  .day-content{padding:0 18px 18px}
-  .info-table{display:block;overflow-x:auto}
-}
-@media print{
-  .navbar,.backtop{display:none!important}
-  body{background:#fff}
-  .hero{margin-top:0}
-  .hero-card{box-shadow:none}
-  .day-content{display:block!important}
-  .day-card{break-inside:avoid}
-}
+@media(max-width:560px){body{font-size:16px}main,.hero{padding-left:14px;padding-right:14px}.hero-card{border-radius:26px;padding:30px 20px}.flight{grid-template-columns:1fr}.flight-line{transform:rotate(90deg);height:34px}.section-title{font-size:26px}.day-toggle h3{font-size:21px}.day-toggle{padding:18px}.day-content{padding:0 18px 18px}.info-table{display:block;overflow-x:auto}}
+@media print{.navbar,.backtop{display:none!important}body{background:#fff}.hero{margin-top:0}.hero-card{box-shadow:none}.day-content{display:block!important}.day-card{break-inside:avoid}}
 </style>
 </head>
 <body>
-
-<nav class="navbar">
-  <div class="nav-inner">
-    <div class="brand"><span class="brand-mark">🍁</span>京阪楓葉親子行</div>
-    <button class="menu-toggle" aria-label="開啟導覽">☰ 選單</button>
-    <div class="nav-links">
-      <a href="#overview">總覽</a>
-      <a href="#flights">班機</a>
-      <a href="#days">每日行程</a>
-      <a href="#stay">住宿行李</a>
-      <a href="#transport">交通</a>
-      <a href="#booking">預約提醒</a>
-      <a href="#checklist">出門清單</a>
-    </div>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="hero-card">
-    <div class="kicker">KYOTO × OSAKA FAMILY TRIP 2026</div>
-    <h1>京阪楓葉親子行 🍁</h1>
-    <div class="hero-sub">京都 × 大阪｜6 天 5 夜親子自由行<br>2026 / 12 / 11（五）－ 12 / 16（三）</div>
-    <div class="hero-chips">
-      <span class="chip">👨‍👩‍👧 4 大 1 小（3.5 歲）</span>
-      <span class="chip">🛒 嬰兒推車</span>
-      <span class="chip">🏯 京都 2 晚</span>
-      <span class="chip">🎢 大阪 3 晚</span>
-      <span class="chip">👘 嵐山和服</span>
-      <span class="chip">🚂 嵯峨野小火車</span>
-    </div>
-  </div>
-</header>
-
+<nav class="navbar"><div class="nav-inner"><div class="brand"><span class="brand-mark">🍁</span>京阪楓葉親子行</div><button class="menu-toggle" aria-label="開啟導覽">☰ 選單</button><div class="nav-links"><a href="#overview">總覽</a><a href="#flights">班機</a><a href="#days">每日行程</a><a href="#stay">住宿行李</a><a href="#transport">交通</a><a href="#booking">預約提醒</a><a href="#checklist">出門清單</a></div></div></nav>
+<header class="hero"><div class="hero-card"><div class="kicker">KYOTO × OSAKA FAMILY TRIP 2026</div><h1>京阪楓葉親子行 🍁</h1><div class="hero-sub">京都 × 大阪｜6 天 5 夜親子自由行<br>2026 / 12 / 11（五）－ 12 / 16（三）</div><div class="hero-chips"><span class="chip">👨‍👩‍👧 4 大 1 小（3.5 歲）</span><span class="chip">🛒 嬰兒推車</span><span class="chip">🏯 京都 2 晚</span><span class="chip">🎢 大阪 3 晚</span><span class="chip">👘 嵐山和服</span><span class="chip">🚂 嵯峨野小火車</span></div></div></header>
+<section class="trip-summary" aria-label="旅程基本資訊">
+  <div class="summary-card"><div class="summary-icon">📅</div><div><div class="summary-label">旅遊日期</div><div class="summary-value">2026/12/11（五）－ 12/16（三）</div><div class="summary-sub">6 天 5 夜｜京都 × 大阪</div></div></div>
+  <div class="summary-card"><div class="summary-icon">👨‍👩‍👧</div><div><div class="summary-label">旅遊成員</div><div class="summary-value">4 大 1 小</div><div class="summary-sub">幼童 3.5 歲｜攜帶嬰兒推車</div></div></div>
+  <div class="summary-card"><div class="summary-icon">🏨</div><div><div class="summary-label">住宿摘要</div><div class="summary-value">京都 2 晚＋大阪 3 晚</div><div class="summary-sub">12/11–13 Hotel Mondonce Kyoto Gojo<br>12/13–16 ESLEAD HOTEL Osaka Nipponbashi</div></div></div>
+</section>
 <main>
 <section id="overview">
-  <div class="section-head">
-    <div><h2 class="section-title">旅程總覽</h2><div class="section-note">先看這裡，就能掌握整趟旅行節奏</div></div>
-  </div>
-  <div class="grid grid-3">
-    <div class="card overview-card"><span class="day-badge">DAY 1｜12/11 五</span><h3>抵達京都</h3><div class="city-tag">京都</div><p>TPE → KIX → HARUKA → Hotel Mondonce 入住 → 河原町／高島屋晚餐</p><div class="stat-row"><span class="stat">🚶 3–5 km</span><span class="stat">💤 保守行程</span></div></div>
-    <div class="card overview-card"><span class="day-badge">DAY 2｜12/12 六</span><h3>嵐山和服日</h3><div class="city-tag">京都</div><p>MOCOMOCO 親子和服＋嵯峨野小火車＋天龍寺＋竹林＋渡月橋</p><div class="stat-row"><span class="stat">🚶 6–7 km</span><span class="stat">👘 09:00 和服</span></div></div>
-    <div class="card overview-card"><span class="day-badge">DAY 3｜12/13 日</span><h3>清水寺 → 大阪</h3><div class="city-tag">京都 → 大阪</div><p>清水寺＋二三年坂＋祇園＋錦市場 → 回飯店取行李 → ESLEAD 入住</p><div class="stat-row"><span class="stat">🚶 7–9 km</span><span class="stat">🧳 換飯店</span></div></div>
-    <div class="card overview-card"><span class="day-badge">DAY 4｜12/14 一</span><h3>梅田逛街夜景</h3><div class="city-tag">大阪</div><p>Pokémon Center OSAKA＋LUCUA／Grand Front＋梅田藍天大廈夕陽夜景</p><div class="stat-row"><span class="stat">🚶 6–8 km</span><span class="stat">🌇 夕陽夜景</span></div></div>
-    <div class="card overview-card"><span class="day-badge">DAY 5｜12/15 二</span><h3>USJ 全天</h3><div class="city-tag">大阪</div><p>Universal Studios Japan 全天，依 Express Pass／整理券彈性調整</p><div class="stat-row"><span class="stat">🚶 10–14 km</span><span class="stat">🎢 重點日</span></div></div>
-    <div class="card overview-card"><span class="day-badge">DAY 6｜12/16 三</span><h3>回台灣</h3><div class="city-tag">大阪 → 台灣</div><p>退房 → 新今宮 → 關西機場 → TPE → 永和</p><div class="stat-row"><span class="stat">🚶 2–4 km</span><span class="stat">✈️ 14:30 起飛</span></div></div>
-  </div>
-</section>
-
-<section id="flights">
-  <div class="section-head"><div><h2 class="section-title">班機資訊</h2><div class="section-note">中華航空｜時間以行前電子機票為準</div></div></div>
-  <div class="grid grid-2">
-    <div class="card highlight">
-      <div class="day-badge">去程｜CI152</div>
-      <div class="flight">
-        <div class="airport"><strong>TPE</strong><br>12/11 09:45</div>
-        <div class="flight-line">✈︎</div>
-        <div class="airport"><strong>KIX</strong><br>12/11 13:20</div>
-      </div>
-      <div class="flight-meta">經濟艙基本（N）｜抵達後銜接 HARUKA 前往京都</div>
-    </div>
-    <div class="card highlight">
-      <div class="day-badge">回程｜CI153</div>
-      <div class="flight">
-        <div class="airport"><strong>KIX</strong><br>12/16 14:30</div>
-        <div class="flight-line">✈︎</div>
-        <div class="airport"><strong>TPE</strong><br>12/16 16:50</div>
-      </div>
-      <div class="flight-meta">經濟艙基本（N）｜建議 11:00～11:20 抵達 KIX</div>
-    </div>
-  </div>
-</section>
-
-<section id="days">
-  <div class="section-head"><div><h2 class="section-title">每日詳細行程</h2><div class="section-note">點開每天卡片，可看時間、交通與親子提醒</div></div></div>
-  <div class="accordion">
-
-    <article class="day-card open">
-      <button class="day-toggle"><div><h3>DAY 1｜12/11（五）抵達京都</h3><small>永和 → 桃園機場 → KIX → HARUKA → 京都入住</small></div><span class="toggle-icon">＋</span></button>
-      <div class="day-content">
-        <div class="route">🏠 永和福和路 → TPE → KIX → JR 關西機場站 → HARUKA → 京都站 → Hotel Mondonce Kyoto Gojo</div>
-        <div class="timeline">
-          <div class="t-item"><div class="time">05:00</div><div class="activity">起床、簡單早餐、最後確認</div><div class="transport">護照、網卡、行李、兒童用品。</div></div>
-          <div class="t-item"><div class="time">05:30</div><div class="activity">從永和出發前往桃園機場</div><div class="transport">4 大 1 小＋推車＋行李，建議預約送機／包車；道路抓 60–70 分鐘。</div></div>
-          <div class="t-item"><div class="time">06:30–07:00</div><div class="activity">抵達 TPE、報到與託運</div><div class="transport">國際線預留至少 2.5 小時。</div></div>
-          <div class="t-item"><div class="time">07:00–08:40</div><div class="activity">安檢、出境、早餐／免稅區</div></div>
-          <div class="t-item"><div class="time">09:45</div><div class="activity">CI152 台北起飛</div></div>
-          <div class="t-item"><div class="time">13:20</div><div class="activity">抵達大阪 KIX</div><div class="transport">入境、領行李、海關預抓 50–70 分鐘。</div></div>
-          <div class="t-item"><div class="time">14:20–14:40</div><div class="activity">前往 JR 關西機場站，準備 HARUKA</div><div class="transport">帶小孩建議指定席；事先準備票券較省時間。</div></div>
-          <div class="t-item"><div class="time">約 14:45–15:15</div><div class="activity">HARUKA 前往京都</div><div class="transport">KIX → 京都約 75 分鐘，依入境速度搭最近班次。</div></div>
-          <div class="t-item"><div class="time">約 16:00–16:30</div><div class="activity">抵達京都站</div><div class="transport">5 人＋大行李，建議直接 Taxi 到飯店。</div></div>
-          <div class="t-item"><div class="time">16:20–17:00</div><div class="activity">Hotel Mondonce Kyoto Gojo 入住</div><div class="transport">15:00 後可入住，無需繞去寄放行李。</div></div>
-          <div class="t-item"><div class="time">17:00–18:00</div><div class="activity">房內休息、整理</div></div>
-          <div class="t-item"><div class="time">18:15–20:15</div><div class="activity">河原町／京都高島屋 S.C. 晚餐與簡單逛街</div><div class="transport">抵達日以室內商場為主。</div></div>
-          <div class="t-item"><div class="time">20:30</div><div class="activity">回飯店休息</div></div>
-        </div>
-        <div class="callout">🍁 Day 1 重點：HARUKA 到京都後已過飯店 15:00 入住時間，直接入住最省體力。</div>
-      </div>
-    </article>
-
-    <article class="day-card">
-      <button class="day-toggle"><div><h3>DAY 2｜12/12（六）嵐山親子和服＋小火車</h3><small>MOCOMOCO → Torokko 嵯峨 → 龜岡 → 天龍寺 → 竹林 → 渡月橋</small></div><span class="toggle-icon">＋</span></button>
-      <div class="day-content">
-        <div class="route">🏨 飯店 → 五條 → 京都 → JR 嵯峨嵐山 → MOCOMOCO → Torokko 嵯峨 → 龜岡 → JR 馬堀 → 嵯峨嵐山 → 嵐山景點 → 回飯店</div>
-        <div class="timeline">
-          <div class="t-item"><div class="time">07:00–07:30</div><div class="activity">起床、早餐</div><div class="transport">和服日穿薄、好脫穿的內搭；貴重物品用小包。</div></div>
-          <div class="t-item"><div class="time">08:05</div><div class="activity">飯店出發</div><div class="transport">步行約 5 分到地下鐵五條站。</div></div>
-          <div class="t-item"><div class="time">08:10–08:20</div><div class="activity">五條 → 京都站</div><div class="transport">京都市營地下鐵烏丸線，1 站。</div></div>
-          <div class="t-item"><div class="time">08:25–08:50</div><div class="activity">京都 → JR 嵯峨嵐山</div><div class="transport">JR 嵯峨野線；預留 20–25 分鐘。</div></div>
-          <div class="t-item"><div class="time">08:55</div><div class="activity">步行到 MOCOMOCO 嵐山本店</div><div class="transport">JR 嵯峨嵐山站南口約 4 分鐘。</div></div>
-          <div class="t-item"><div class="time">09:00–10:20</div><div class="activity">親子和服著裝＋女生髮型</div><div class="transport">自己的衣服留店；推車依小孩狀態決定帶走或寄放。</div></div>
-          <div class="t-item"><div class="time">10:20–10:45</div><div class="activity">前往 Torokko 嵯峨站</div><div class="transport">拍照、上廁所，不要壓最後 5 分鐘。</div></div>
-          <div class="t-item"><div class="time">11:02–11:25</div><div class="activity">嵯峨野小火車：嵯峨 → 龜岡</div><div class="transport">2026 預排班次；建議事先預約。</div></div>
-          <div class="t-item"><div class="time">11:25–11:45</div><div class="activity">Torokko 龜岡 → JR 馬堀</div><div class="transport">步行約 10–15 分鐘。</div></div>
-          <div class="t-item"><div class="time">約 11:45–12:05</div><div class="activity">JR 馬堀 → JR 嵯峨嵐山</div></div>
-          <div class="t-item"><div class="time">12:10–13:10</div><div class="activity">嵐山午餐</div></div>
-          <div class="t-item"><div class="time">13:15–14:00</div><div class="activity">天龍寺</div><div class="transport">庭園＋和服拍照；依小孩體力縮短停留。</div></div>
-          <div class="t-item"><div class="time">14:05–14:50</div><div class="activity">竹林小徑＋野宮神社</div></div>
-          <div class="t-item"><div class="time">15:00–15:50</div><div class="activity">嵐山商店街／伴手禮</div><div class="transport">Miffy、拉拉熊、京ばあむ、老松視排隊取捨。</div></div>
-          <div class="t-item"><div class="time">15:50–16:30</div><div class="activity">渡月橋＋桂川親子和服照</div></div>
-          <div class="t-item"><div class="time">16:30–17:15</div><div class="activity">回 MOCOMOCO 換回便服</div><div class="transport">最終歸還 17:30，務必預留換裝時間。</div></div>
-          <div class="t-item"><div class="time">17:20–18:20</div><div class="activity">JR 嵯峨嵐山 → 京都 → 五條 → 飯店</div></div>
-          <div class="t-item"><div class="time">18:30 之後</div><div class="activity">晚餐、整理隔天退房行李</div></div>
-        </div>
-        <div class="callout">🛒 推車：小火車可攜嬰兒車，但上車前需折疊；若孩子下午容易累，建議推車帶著。</div>
-      </div>
-    </article>
-
-    <article class="day-card">
-      <button class="day-toggle"><div><h3>DAY 3｜12/13（日）清水寺・錦市場 → 大阪</h3><small>飯店寄行李 → 清水寺 → 二三年坂 → 祇園 → 錦市場 → 取行李 → ESLEAD</small></div><span class="toggle-icon">＋</span></button>
-      <div class="day-content">
-        <div class="route">🧳 早上退房後，大型行李寄 Hotel Mondonce；全家輕裝觀光，下午取行李後一次移動大阪。</div>
-        <div class="timeline">
-          <div class="t-item"><div class="time">07:00–07:40</div><div class="activity">早餐、整理房間</div></div>
-          <div class="t-item"><div class="time">07:45–08:00</div><div class="activity">退房＋大型行李寄放</div></div>
-          <div class="t-item"><div class="time">08:05–08:25</div><div class="activity">飯店 → 清水寺周邊</div><div class="transport">建議叫 2 台 Taxi／大型車到五條坂或清水坂附近，減少上坡。</div></div>
-          <div class="t-item"><div class="time">08:30–10:00</div><div class="activity">清水寺</div><div class="transport">本堂、清水舞台、音羽瀑布。</div></div>
-          <div class="t-item"><div class="time">10:00–10:50</div><div class="activity">三年坂 → 二年坂</div><div class="transport">慢慢下坡逛町家，推車注意石板路。</div></div>
-          <div class="t-item"><div class="time">10:50–11:20</div><div class="activity">八坂塔周邊</div></div>
-          <div class="t-item"><div class="time">11:20–12:00</div><div class="activity">祇園／花見小路周邊散步</div></div>
-          <div class="t-item"><div class="time">12:00–12:20</div><div class="activity">移動錦市場</div><div class="transport">Taxi 最省力；步行則抓 20–30 分以上。</div></div>
-          <div class="t-item"><div class="time">12:20–13:35</div><div class="activity">錦市場午餐＋小吃＋採買</div></div>
-          <div class="t-item"><div class="time">13:35–13:55</div><div class="activity">回 Hotel Mondonce</div><div class="transport">步行約 15–20 分或短程 Taxi。</div></div>
-          <div class="t-item"><div class="time">14:00–14:15</div><div class="activity">取回全部行李</div></div>
-          <div class="t-item"><div class="time">14:15–15:45</div><div class="activity">京都 → 大阪惠美須町</div><div class="transport">五條→四條→步行轉阪急烏丸→阪急京都線→淡路（依班次）→Osaka Metro 堺筋線→惠美須町。帶行李抓 80–90 分鐘。</div></div>
-          <div class="t-item"><div class="time">15:45–16:05</div><div class="activity">惠美須町 1-B → ESLEAD</div><div class="transport">出口步行約 1 分鐘。</div></div>
-          <div class="t-item"><div class="time">16:05–17:00</div><div class="activity">辦理入住、放行李、休息</div></div>
-          <div class="t-item"><div class="time">17:30–19:30</div><div class="activity">新世界／通天閣周邊晚餐（彈性）</div></div>
-          <div class="t-item"><div class="time">20:00</div><div class="activity">回飯店、洗衣、整理 USJ 用品</div></div>
-        </div>
-        <div class="callout">👨‍👩‍👧 換飯店日重點：清水寺比嵐山更適合排在這天，景點集中在京都核心區，大行李不用帶到京都西側。</div>
-      </div>
-    </article>
-
-    <article class="day-card">
-      <button class="day-toggle"><div><h3>DAY 4｜12/14（一）梅田＋寶可夢＋夜景</h3><small>Pokémon Center OSAKA → LUCUA／Grand Front → 梅田藍天大廈</small></div><span class="toggle-icon">＋</span></button>
-      <div class="day-content">
-        <div class="timeline">
-          <div class="t-item"><div class="time">08:00–09:00</div><div class="activity">起床、早餐</div><div class="transport">讓孩子補眠，不用太早出門。</div></div>
-          <div class="t-item"><div class="time">09:30</div><div class="activity">飯店出發</div></div>
-          <div class="t-item"><div class="time">09:30–10:05</div><div class="activity">惠美須町 → 南森町 → 東梅田</div><div class="transport">堺筋線轉谷町線。</div></div>
-          <div class="t-item"><div class="time">10:10–11:40</div><div class="activity">Pokémon Center OSAKA</div></div>
-          <div class="t-item"><div class="time">11:40–12:50</div><div class="activity">LUCUA／大阪車站午餐</div></div>
-          <div class="t-item"><div class="time">13:00–14:30</div><div class="activity">大阪車站城／Grand Front Osaka</div></div>
-          <div class="t-item"><div class="time">14:30–15:30</div><div class="activity">咖啡／小孩休息</div></div>
-          <div class="t-item"><div class="time">15:40–16:10</div><div class="activity">步行前往梅田藍天大廈</div></div>
-          <div class="t-item"><div class="time">16:10–18:00</div><div class="activity">空中庭園展望台</div><div class="transport">目標一次看到夕陽＋夜景。</div></div>
-          <div class="t-item"><div class="time">18:10–19:20</div><div class="activity">梅田晚餐</div></div>
-          <div class="t-item"><div class="time">19:30–20:10</div><div class="activity">返回惠美須町</div></div>
-          <div class="t-item"><div class="time">20:15</div><div class="activity">回飯店，準備 USJ</div></div>
-        </div>
-        <div class="callout">🌇 這天刻意不塞遠距景點，USJ 前一天保留體力。</div>
-      </div>
-    </article>
-
-    <article class="day-card">
-      <button class="day-toggle"><div><h3>DAY 5｜12/15（二）USJ 全天</h3><small>新今宮 → 西九條 → Universal City → USJ</small></div><span class="toggle-icon">＋</span></button>
-      <div class="day-content">
-        <div class="route">🎢 飯店 → 新今宮 → 西九條 → Universal City。2026/12/15 正式開園時間尚待 USJ 公告。</div>
-        <div class="timeline">
-          <div class="t-item"><div class="time">05:45–06:15</div><div class="activity">起床、快速早餐</div></div>
-          <div class="t-item"><div class="time">06:30</div><div class="activity">離開飯店</div><div class="transport">可步行約 13 分到新今宮；想省腳力就搭短程 Taxi。</div></div>
-          <div class="t-item"><div class="time">06:45–07:20</div><div class="activity">新今宮 → 西九條 → Universal City</div></div>
-          <div class="t-item"><div class="time">約 07:20–07:40</div><div class="activity">抵達 USJ 外圍排隊</div></div>
-          <div class="t-item"><div class="time">開園～10:30</div><div class="activity">第一波熱門設施／超級任天堂世界</div><div class="transport">Express Pass 依指定時段；無 Express 入園後立刻看 App 整理券。</div></div>
-          <div class="t-item"><div class="time">10:30–11:15</div><div class="activity">親子設施＋點心休息</div></div>
-          <div class="t-item"><div class="time">11:15–12:15</div><div class="activity">提早午餐</div></div>
-          <div class="t-item"><div class="time">12:15–15:30</div><div class="activity">園區重點設施／角色互動</div></div>
-          <div class="t-item"><div class="time">15:30–16:15</div><div class="activity">下午休息＋補給</div></div>
-          <div class="t-item"><div class="time">16:15–18:30</div><div class="activity">傍晚設施／表演／夜間氣氛</div></div>
-          <div class="t-item"><div class="time">18:30–19:30</div><div class="activity">晚餐或 CityWalk</div></div>
-          <div class="t-item"><div class="time">19:30–20:30</div><div class="activity">回飯店</div><div class="transport">若孩子睡著，從新今宮搭 Taxi 回飯店最省力。</div></div>
-        </div>
-        <div class="callout">⏰ 行前 1～2 個月確認 USJ 正式營業時間，再把出門時間依實際開園往前抓 60～90 分鐘。</div>
-      </div>
-    </article>
-
-    <article class="day-card">
-      <button class="day-toggle"><div><h3>DAY 6｜12/16（三）回台灣</h3><small>ESLEAD 退房 → 新今宮 → KIX → TPE → 永和</small></div><span class="toggle-icon">＋</span></button>
-      <div class="day-content">
-        <div class="timeline">
-          <div class="t-item"><div class="time">07:30–08:30</div><div class="activity">起床、早餐、最後整理</div></div>
-          <div class="t-item"><div class="time">08:30–09:30</div><div class="activity">附近最後採買／休息</div></div>
-          <div class="t-item"><div class="time">09:30–09:50</div><div class="activity">退房</div></div>
-          <div class="t-item"><div class="time">09:50–10:10</div><div class="activity">飯店 → 新今宮站</div><div class="transport">帶全部行李建議短程 Taxi。</div></div>
-          <div class="t-item"><div class="time">約 10:15–11:00</div><div class="activity">南海電鐵 新今宮 → 關西機場</div><div class="transport">優先 Rapi:t，也可空港急行；待 12 月班表鎖定。</div></div>
-          <div class="t-item"><div class="time">11:00–11:20</div><div class="activity">抵達 KIX、前往華航櫃檯</div></div>
-          <div class="t-item"><div class="time">11:20–12:30</div><div class="activity">報到、託運、安檢、出境</div></div>
-          <div class="t-item"><div class="time">12:30–13:30</div><div class="activity">關西機場午餐／最後伴手禮</div></div>
-          <div class="t-item"><div class="time">13:35</div><div class="activity">前往登機門</div></div>
-          <div class="t-item"><div class="time">14:30</div><div class="activity">CI153 KIX 起飛</div></div>
-          <div class="t-item"><div class="time">16:50</div><div class="activity">抵達 TPE</div></div>
-          <div class="t-item"><div class="time">17:50–19:00</div><div class="activity">桃園機場 → 永和福和路</div><div class="transport">有接機／包車最輕鬆；否則機捷 A1＋Taxi。</div></div>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section id="stay">
-  <div class="section-head"><div><h2 class="section-title">住宿與行李策略</h2><div class="section-note">換飯店日的核心是「大行李不跟著逛」</div></div></div>
-  <div class="grid grid-2">
-    <div class="card">
-      <h3>🏯 12/11–12/13｜Hotel Mondonce Kyoto Gojo</h3>
-      <p>228-1 Tawaraya-cho, Shimogyo Ward, Kyoto 600-8070</p>
-      <p><b>入住：</b>15:00 起　<b>退房：</b>10:00 前</p>
-      <p><b>行李：</b>12/13 退房後將全部大型行李寄在飯店，清水寺與錦市場只帶隨身小包＋推車。</p>
-    </div>
-    <div class="card">
-      <h3>🏙️ 12/13–12/16｜ESLEAD HOTEL Osaka Nipponbashi</h3>
-      <p>5-12-6 Nipponbashi, Naniwa-ku, Osaka 556-0005</p>
-      <p><b>入住：</b>16:00 起　<b>退房：</b>10:00 前</p>
-      <p><b>交通：</b>Osaka Metro 堺筋線「惠美須町站」1-B 出口步行約 1 分鐘。</p>
-    </div>
-  </div>
-  <div class="card" style="margin-top:16px">
-    <h3>👘 12/12 MOCOMOCO 行李／衣物</h3>
-    <p>嵐山日不帶大型行李。換和服時自己的便服可留在 MOCOMOCO；手機、錢包、護照、ICOCA 等貴重物品隨身。推車依孩子下午是否需要午睡決定帶走或寄放。</p>
-  </div>
-</section>
-
-<section id="transport">
-  <div class="section-head"><div><h2 class="section-title">交通快速卡</h2><div class="section-note">家人臨時查路線時看這張最快</div></div></div>
-  <table class="info-table">
-    <thead><tr><th>區間</th><th>建議路線</th><th>預估時間</th></tr></thead>
-    <tbody>
-      <tr><td>KIX → 京都</td><td>JR 關空特急 HARUKA</td><td>約 75 分</td></tr>
-      <tr><td>京都飯店 → 嵐山</td><td>五條 → 京都（地下鐵）→ JR 嵯峨嵐山 → 步行 MOCOMOCO</td><td>約 40–50 分</td></tr>
-      <tr><td>嵐山小火車</td><td>Torokko 嵯峨 11:02 → Torokko 龜岡 11:25</td><td>23 分</td></tr>
-      <tr><td>京都 → ESLEAD</td><td>五條 → 四條／烏丸 → 阪急京都線 → 淡路（視班次）→ 堺筋線惠美須町</td><td>約 80–90 分</td></tr>
-      <tr><td>ESLEAD → 梅田</td><td>惠美須町 → 南森町 → 東梅田</td><td>約 25–35 分</td></tr>
-      <tr><td>ESLEAD → USJ</td><td>新今宮 → 西九條 → Universal City（JR）</td><td>約 25–35 分＋步行</td></tr>
-      <tr><td>ESLEAD → KIX</td><td>新今宮 → 關西機場（南海 Rapi:t／空港急行）</td><td>約 40–50 分含候車</td></tr>
-    </tbody>
-  </table>
-</section>
-
-<section id="booking">
-  <div class="section-head"><div><h2 class="section-title">優先預約與行前確認</h2><div class="section-note">有日期的事情先鎖起來</div></div></div>
-  <table class="info-table">
-    <thead><tr><th>項目</th><th>建議時間</th><th>狀態／備註</th></tr></thead>
-    <tbody>
-      <tr><td>MOCOMOCO 嵐山本店</td><td>12/12 09:00</td><td>已決定店家；預約時填成人／兒童人數、兒童身高、髮型需求。</td></tr>
-      <tr><td>嵯峨野小火車</td><td>12/12 11:02 嵯峨→龜岡</td><td>個人票於乘車日前 1 個月 00:00 開賣；建議 11/12 處理。</td></tr>
-      <tr><td>USJ Studio Pass</td><td>12/15</td><td>確認票種與入園 QR Code。</td></tr>
-      <tr><td>USJ Express Pass（若買）</td><td>12/15</td><td>以 Super Nintendo World／親子可玩的設施時段優先。</td></tr>
-      <tr><td>HARUKA</td><td>12/11 KIX→京都</td><td>建議事先準備票券，抵達後依入境速度搭最近一班。</td></tr>
-      <tr><td>南海 Rapi:t</td><td>12/16 新今宮→KIX</td><td>等 12 月班表確定後再鎖定指定席。</td></tr>
-    </tbody>
-  </table>
-  <div class="notice" style="margin-top:16px">
-    <b>行前 14 天再確認：</b>CI152／CI153 最終航廈與時間、12/11 HARUKA 班次、12/12 小火車增班／停駛、12/15 USJ 開閉園時間與 Show Schedule、12/16 Rapi:t 班次、京都／大阪天氣與降雨。
-  </div>
-</section>
-
-<section id="checklist">
-  <div class="section-head"><div><h2 class="section-title">每天出門前清單</h2><div class="section-note">可直接在手機上打勾</div></div></div>
-  <div class="checklist">
-    <label class="check"><input type="checkbox"><span>護照（換飯店／機場日務必帶；一般觀光日成人也建議隨身）</span></label>
-    <label class="check"><input type="checkbox"><span>手機＋行動電源＋充電線</span></label>
-    <label class="check"><input type="checkbox"><span>ICOCA／交通支付方式＋少量日圓現金</span></label>
-    <label class="check"><input type="checkbox"><span>兒童水壺、零食、濕紙巾、替換衣物</span></label>
-    <label class="check"><input type="checkbox"><span>推車＋雨罩／保暖毯</span></label>
-    <label class="check"><input type="checkbox"><span>景點 QR Code／預約畫面離線截圖</span></label>
-    <label class="check"><input type="checkbox"><span>12 月保暖：帽子、圍巾、暖暖包</span></label>
-    <label class="check"><input type="checkbox"><span>和服日：薄內搭，不要穿太厚影響著裝</span></label>
-  </div>
-</section>
-
-<section>
-  <div class="section-head"><div><h2 class="section-title">每日步行量</h2><div class="section-note">體力安排參考</div></div></div>
-  <div class="grid grid-3">
-    <div class="card"><h3>12/11｜3–5 km</h3><p>抵達日保守安排。</p></div>
-    <div class="card"><h3>12/12｜6–7 km</h3><p>和服＋小火車，下午讓孩子使用推車。</p></div>
-    <div class="card"><h3>12/13｜7–9 km</h3><p>清水寺石板坡多，上山段優先 Taxi。</p></div>
-    <div class="card"><h3>12/14｜6–8 km</h3><p>梅田室內多，可安排午休。</p></div>
-    <div class="card"><h3>12/15｜10–14 km</h3><p>USJ 全程推車＋固定休息時段。</p></div>
-    <div class="card"><h3>12/16｜2–4 km</h3><p>以機場移動為主。</p></div>
-  </div>
-</section>
+<div class="section-head"><div><h2 class="section-title">旅程總覽</h2><div class="section-note">先看這裡，就能掌握整趟旅行節奏</div></div></div>
+<div class="grid grid-3">
+<div class="card overview-card"><span class="day-badge">DAY 1｜12/11 五</span><h3>抵達京都</h3><div class="city-tag">京都</div><p>TPE → KIX → HARUKA → Hotel Mondonce 入住 → 河原町／高島屋晚餐</p><div class="stat-row"><span class="stat">🚶 3–5 km</span><span class="stat">💤 保守行程</span></div></div>
+<div class="card overview-card"><span class="day-badge">DAY 2｜12/12 六</span><h3>嵐山和服日</h3><div class="city-tag">京都</div><p>MOCOMOCO 親子和服＋嵯峨野小火車＋天龍寺＋竹林＋渡月橋</p><div class="stat-row"><span class="stat">🚶 6–7 km</span><span class="stat">👘 09:00 和服</span></div></div>
+<div class="card overview-card"><span class="day-badge">DAY 3｜12/13 日</span><h3>清水寺 → 大阪</h3><div class="city-tag">京都 → 大阪</div><p>清水寺＋二三年坂＋祇園＋錦市場 → 回飯店取行李 → ESLEAD 入住</p><div class="stat-row"><span class="stat">🚶 7–9 km</span><span class="stat">🧳 換飯店</span></div></div>
+<div class="card overview-card"><span class="day-badge">DAY 4｜12/14 一</span><h3>梅田逛街夜景</h3><div class="city-tag">大阪</div><p>Pokémon Center OSAKA＋LUCUA／Grand Front＋梅田藍天大廈夕陽夜景</p><div class="stat-row"><span class="stat">🚶 6–8 km</span><span class="stat">🌇 夕陽夜景</span></div></div>
+<div class="card overview-card"><span class="day-badge">DAY 5｜12/15 二</span><h3>USJ 全天</h3><div class="city-tag">大阪</div><p>Universal Studios Japan 全天，依 Express Pass／整理券彈性調整</p><div class="stat-row"><span class="stat">🚶 10–14 km</span><span class="stat">🎢 重點日</span></div></div>
+<div class="card overview-card"><span class="day-badge">DAY 6｜12/16 三</span><h3>回台灣</h3><div class="city-tag">大阪 → 台灣</div><p>退房 → 新今宮 → 關西機場 → TPE → 永和</p><div class="stat-row"><span class="stat">🚶 2–4 km</span><span class="stat">✈️ 14:30 起飛</span></div></div>
+</div></section>
+<section id="flights"><div class="section-head"><div><h2 class="section-title">班機資訊</h2><div class="section-note">中華航空｜時間以行前電子機票為準</div></div></div><div class="grid grid-2"><div class="card highlight"><div class="day-badge">去程｜CI152</div><div class="flight"><div class="airport"><strong>TPE</strong><br>12/11 09:45</div><div class="flight-line">✈︎</div><div class="airport"><strong>KIX</strong><br>12/11 13:20</div></div><div class="flight-meta">經濟艙基本（N）｜抵達後銜接 HARUKA 前往京都</div></div><div class="card highlight"><div class="day-badge">回程｜CI153</div><div class="flight"><div class="airport"><strong>KIX</strong><br>12/16 14:30</div><div class="flight-line">✈︎</div><div class="airport"><strong>TPE</strong><br>12/16 16:50</div></div><div class="flight-meta">經濟艙基本（N）｜建議 11:00～11:20 抵達 KIX</div></div></div></section>
+<section id="days"><div class="section-head"><div><h2 class="section-title">每日詳細行程</h2><div class="section-note">點開每天卡片，可看時間、交通與親子提醒</div></div></div><div class="accordion">
+<article class="day-card open"><button class="day-toggle"><div><h3>DAY 1｜12/11（五）抵達京都</h3><small>永和 → 桃園機場 → KIX → HARUKA → 京都入住</small></div><span class="toggle-icon">＋</span></button><div class="day-content"><div class="route">🏠 永和福和路 → TPE → KIX → JR 關西機場站 → HARUKA → 京都站 → Hotel Mondonce Kyoto Gojo</div><div class="timeline"><div class="t-item"><div class="time">05:00</div><div class="activity">起床、簡單早餐、最後確認</div><div class="transport">護照、網卡、行李、兒童用品。</div></div><div class="t-item"><div class="time">05:30</div><div class="activity">從永和出發前往桃園機場</div><div class="transport">4 大 1 小＋推車＋行李，建議預約送機／包車；道路抓 60–70 分鐘。</div></div><div class="t-item"><div class="time">06:30–07:00</div><div class="activity">抵達 TPE、報到與託運</div><div class="transport">國際線預留至少 2.5 小時。</div></div><div class="t-item"><div class="time">07:00–08:40</div><div class="activity">安檢、出境、早餐／免稅區</div></div><div class="t-item"><div class="time">09:45</div><div class="activity">CI152 台北起飛</div></div><div class="t-item"><div class="time">13:20</div><div class="activity">抵達大阪 KIX</div><div class="transport">入境、領行李、海關預抓 50–70 分鐘。</div></div><div class="t-item"><div class="time">14:20–14:40</div><div class="activity">前往 JR 關西機場站，準備 HARUKA</div><div class="transport">帶小孩建議指定席；事先準備票券較省時間。</div></div><div class="t-item"><div class="time">約 14:45–15:15</div><div class="activity">HARUKA 前往京都</div><div class="transport">KIX → 京都約 75 分鐘，依入境速度搭最近班次。</div></div><div class="t-item"><div class="time">約 16:00–16:30</div><div class="activity">抵達京都站</div><div class="transport">5 人＋大行李，建議直接 Taxi 到飯店。</div></div><div class="t-item"><div class="time">16:20–17:00</div><div class="activity">Hotel Mondonce Kyoto Gojo 入住</div><div class="transport">15:00 後可入住，無需繞去寄放行李。</div></div><div class="t-item"><div class="time">17:00–18:00</div><div class="activity">房內休息、整理</div></div><div class="t-item"><div class="time">18:15–20:15</div><div class="activity">河原町／京都高島屋 S.C. 晚餐與簡單逛街</div><div class="transport">抵達日以室內商場為主。</div></div><div class="t-item"><div class="time">20:30</div><div class="activity">回飯店休息</div></div></div><div class="callout">🍁 Day 1 重點：HARUKA 到京都後已過飯店 15:00 入住時間，直接入住最省體力。</div></div></article>
+<article class="day-card"><button class="day-toggle"><div><h3>DAY 2｜12/12（六）嵐山親子和服＋小火車</h3><small>MOCOMOCO → Torokko 嵯峨 → 龜岡 → 天龍寺 → 竹林 → 渡月橋</small></div><span class="toggle-icon">＋</span></button><div class="day-content"><div class="route">🏨 飯店 → 五條 → 京都 → JR 嵯峨嵐山 → MOCOMOCO → Torokko 嵯峨 → 龜岡 → JR 馬堀 → 嵯峨嵐山 → 嵐山景點 → 回飯店</div><div class="timeline"><div class="t-item"><div class="time">07:00–07:30</div><div class="activity">起床、早餐</div><div class="transport">和服日穿薄、好脫穿的內搭；貴重物品用小包。</div></div><div class="t-item"><div class="time">08:05</div><div class="activity">飯店出發</div><div class="transport">步行約 5 分到地下鐵五條站。</div></div><div class="t-item"><div class="time">08:10–08:20</div><div class="activity">五條 → 京都站</div><div class="transport">京都市營地下鐵烏丸線，1 站。</div></div><div class="t-item"><div class="time">08:25–08:50</div><div class="activity">京都 → JR 嵯峨嵐山</div><div class="transport">JR 嵯峨野線；預留 20–25 分鐘。</div></div><div class="t-item"><div class="time">08:55</div><div class="activity">步行到 MOCOMOCO 嵐山本店</div><div class="transport">JR 嵯峨嵐山站南口約 4 分鐘。</div></div><div class="t-item"><div class="time">09:00–10:20</div><div class="activity">親子和服著裝＋女生髮型</div><div class="transport">自己的衣服留店；推車依小孩狀態決定帶走或寄放。</div></div><div class="t-item"><div class="time">10:20–10:45</div><div class="activity">前往 Torokko 嵯峨站</div><div class="transport">拍照、上廁所，不要壓最後 5 分鐘。</div></div><div class="t-item"><div class="time">11:02–11:25</div><div class="activity">嵯峨野小火車：嵯峨 → 龜岡</div><div class="transport">2026 預排班次；建議事先預約。</div></div><div class="t-item"><div class="time">11:25–11:45</div><div class="activity">Torokko 龜岡 → JR 馬堀</div><div class="transport">步行約 10–15 分鐘。</div></div><div class="t-item"><div class="time">約 11:45–12:05</div><div class="activity">JR 馬堀 → JR 嵯峨嵐山</div></div><div class="t-item"><div class="time">12:10–13:10</div><div class="activity">嵐山午餐</div></div><div class="t-item"><div class="time">13:15–14:00</div><div class="activity">天龍寺</div><div class="transport">庭園＋和服拍照；依小孩體力縮短停留。</div></div><div class="t-item"><div class="time">14:05–14:50</div><div class="activity">竹林小徑＋野宮神社</div></div><div class="t-item"><div class="time">15:00–15:50</div><div class="activity">嵐山商店街／伴手禮</div><div class="transport">Miffy、拉拉熊、京ばあむ、老松視排隊取捨。</div></div><div class="t-item"><div class="time">15:50–16:30</div><div class="activity">渡月橋＋桂川親子和服照</div></div><div class="t-item"><div class="time">16:30–17:15</div><div class="activity">回 MOCOMOCO 換回便服</div><div class="transport">最終歸還 17:30，務必預留換裝時間。</div></div><div class="t-item"><div class="time">17:20–18:20</div><div class="activity">JR 嵯峨嵐山 → 京都 → 五條 → 飯店</div></div><div class="t-item"><div class="time">18:30 之後</div><div class="activity">晚餐、整理隔天退房行李</div></div></div><div class="callout">🛒 推車：小火車可攜嬰兒車，但上車前需折疊；若孩子下午容易累，建議推車帶著。</div></div></article>
+<article class="day-card"><button class="day-toggle"><div><h3>DAY 3｜12/13（日）清水寺・錦市場 → 大阪</h3><small>飯店寄行李 → 清水寺 → 二三年坂 → 祇園 → 錦市場 → 取行李 → ESLEAD</small></div><span class="toggle-icon">＋</span></button><div class="day-content"><div class="route">🧳 早上退房後，大型行李寄 Hotel Mondonce；全家輕裝觀光，下午取行李後一次移動大阪。</div><div class="timeline"><div class="t-item"><div class="time">07:00–07:40</div><div class="activity">早餐、整理房間</div></div><div class="t-item"><div class="time">07:45–08:00</div><div class="activity">退房＋大型行李寄放</div></div><div class="t-item"><div class="time">08:05–08:25</div><div class="activity">飯店 → 清水寺周邊</div><div class="transport">建議叫 2 台 Taxi／大型車到五條坂或清水坂附近，減少上坡。</div></div><div class="t-item"><div class="time">08:30–10:00</div><div class="activity">清水寺</div><div class="transport">本堂、清水舞台、音羽瀑布。</div></div><div class="t-item"><div class="time">10:00–10:50</div><div class="activity">三年坂 → 二年坂</div><div class="transport">慢慢下坡逛町家，推車注意石板路。</div></div><div class="t-item"><div class="time">10:50–11:20</div><div class="activity">八坂塔周邊</div></div><div class="t-item"><div class="time">11:20–12:00</div><div class="activity">祇園／花見小路周邊散步</div></div><div class="t-item"><div class="time">12:00–12:20</div><div class="activity">移動錦市場</div><div class="transport">Taxi 最省力；步行則抓 20–30 分以上。</div></div><div class="t-item"><div class="time">12:20–13:35</div><div class="activity">錦市場午餐＋小吃＋採買</div></div><div class="t-item"><div class="time">13:35–13:55</div><div class="activity">回 Hotel Mondonce</div><div class="transport">步行約 15–20 分或短程 Taxi。</div></div><div class="t-item"><div class="time">14:00–14:15</div><div class="activity">取回全部行李</div></div><div class="t-item"><div class="time">14:15–15:45</div><div class="activity">京都 → 大阪惠美須町</div><div class="transport">五條→四條→步行轉阪急烏丸→阪急京都線→淡路（依班次）→Osaka Metro 堺筋線→惠美須町。帶行李抓 80–90 分鐘。</div></div><div class="t-item"><div class="time">15:45–16:05</div><div class="activity">惠美須町 1-B → ESLEAD</div><div class="transport">出口步行約 1 分鐘。</div></div><div class="t-item"><div class="time">16:05–17:00</div><div class="activity">辦理入住、放行李、休息</div></div><div class="t-item"><div class="time">17:30–19:30</div><div class="activity">新世界／通天閣周邊晚餐（彈性）</div></div><div class="t-item"><div class="time">20:00</div><div class="activity">回飯店、洗衣、整理 USJ 用品</div></div></div><div class="callout">👨‍👩‍👧 換飯店日重點：清水寺比嵐山更適合排在這天，景點集中在京都核心區，大行李不用帶到京都西側。</div></div></article>
+<article class="day-card"><button class="day-toggle"><div><h3>DAY 4｜12/14（一）梅田＋寶可夢＋夜景</h3><small>Pokémon Center OSAKA → LUCUA／Grand Front → 梅田藍天大廈</small></div><span class="toggle-icon">＋</span></button><div class="day-content"><div class="timeline"><div class="t-item"><div class="time">08:00–09:00</div><div class="activity">起床、早餐</div><div class="transport">讓孩子補眠，不用太早出門。</div></div><div class="t-item"><div class="time">09:30</div><div class="activity">飯店出發</div></div><div class="t-item"><div class="time">09:30–10:05</div><div class="activity">惠美須町 → 南森町 → 東梅田</div><div class="transport">堺筋線轉谷町線。</div></div><div class="t-item"><div class="time">10:10–11:40</div><div class="activity">Pokémon Center OSAKA</div></div><div class="t-item"><div class="time">11:40–12:50</div><div class="activity">LUCUA／大阪車站午餐</div></div><div class="t-item"><div class="time">13:00–14:30</div><div class="activity">大阪車站城／Grand Front Osaka</div></div><div class="t-item"><div class="time">14:30–15:30</div><div class="activity">咖啡／小孩休息</div></div><div class="t-item"><div class="time">15:40–16:10</div><div class="activity">步行前往梅田藍天大廈</div></div><div class="t-item"><div class="time">16:10–18:00</div><div class="activity">空中庭園展望台</div><div class="transport">目標一次看到夕陽＋夜景。</div></div><div class="t-item"><div class="time">18:10–19:20</div><div class="activity">梅田晚餐</div></div><div class="t-item"><div class="time">19:30–20:10</div><div class="activity">返回惠美須町</div></div><div class="t-item"><div class="time">20:15</div><div class="activity">回飯店，準備 USJ</div></div></div><div class="callout">🌇 這天刻意不塞遠距景點，USJ 前一天保留體力。</div></div></article>
+<article class="day-card"><button class="day-toggle"><div><h3>DAY 5｜12/15（二）USJ 全天</h3><small>新今宮 → 西九條 → Universal City → USJ</small></div><span class="toggle-icon">＋</span></button><div class="day-content"><div class="route">🎢 飯店 → 新今宮 → 西九條 → Universal City。2026/12/15 正式開園時間尚待 USJ 公告。</div><div class="timeline"><div class="t-item"><div class="time">05:45–06:15</div><div class="activity">起床、快速早餐</div></div><div class="t-item"><div class="time">06:30</div><div class="activity">離開飯店</div><div class="transport">可步行約 13 分到新今宮；想省腳力就搭短程 Taxi。</div></div><div class="t-item"><div class="time">06:45–07:20</div><div class="activity">新今宮 → 西九條 → Universal City</div></div><div class="t-item"><div class="time">約 07:20–07:40</div><div class="activity">抵達 USJ 外圍排隊</div></div><div class="t-item"><div class="time">開園～10:30</div><div class="activity">第一波熱門設施／超級任天堂世界</div><div class="transport">Express Pass 依指定時段；無 Express 入園後立刻看 App 整理券。</div></div><div class="t-item"><div class="time">10:30–11:15</div><div class="activity">親子設施＋點心休息</div></div><div class="t-item"><div class="time">11:15–12:15</div><div class="activity">提早午餐</div></div><div class="t-item"><div class="time">12:15–15:30</div><div class="activity">園區重點設施／角色互動</div></div><div class="t-item"><div class="time">15:30–16:15</div><div class="activity">下午休息＋補給</div></div><div class="t-item"><div class="time">16:15–18:30</div><div class="activity">傍晚設施／表演／夜間氣氛</div></div><div class="t-item"><div class="time">18:30–19:30</div><div class="activity">晚餐或 CityWalk</div></div><div class="t-item"><div class="time">19:30–20:30</div><div class="activity">回飯店</div><div class="transport">若孩子睡著，從新今宮搭 Taxi 回飯店最省力。</div></div></div><div class="callout">⏰ 行前 1～2 個月確認 USJ 正式營業時間，再把出門時間依實際開園往前抓 60～90 分鐘。</div></div></article>
+<article class="day-card"><button class="day-toggle"><div><h3>DAY 6｜12/16（三）回台灣</h3><small>ESLEAD 退房 → 新今宮 → KIX → TPE → 永和</small></div><span class="toggle-icon">＋</span></button><div class="day-content"><div class="timeline"><div class="t-item"><div class="time">07:30–08:30</div><div class="activity">起床、早餐、最後整理</div></div><div class="t-item"><div class="time">08:30–09:30</div><div class="activity">附近最後採買／休息</div></div><div class="t-item"><div class="time">09:30–09:50</div><div class="activity">退房</div></div><div class="t-item"><div class="time">09:50–10:10</div><div class="activity">飯店 → 新今宮站</div><div class="transport">帶全部行李建議短程 Taxi。</div></div><div class="t-item"><div class="time">約 10:15–11:00</div><div class="activity">南海電鐵 新今宮 → 關西機場</div><div class="transport">優先 Rapi:t，也可空港急行；待 12 月班表鎖定。</div></div><div class="t-item"><div class="time">11:00–11:20</div><div class="activity">抵達 KIX、前往華航櫃檯</div></div><div class="t-item"><div class="time">11:20–12:30</div><div class="activity">報到、託運、安檢、出境</div></div><div class="t-item"><div class="time">12:30–13:30</div><div class="activity">關西機場午餐／最後伴手禮</div></div><div class="t-item"><div class="time">13:35</div><div class="activity">前往登機門</div></div><div class="t-item"><div class="time">14:30</div><div class="activity">CI153 KIX 起飛</div></div><div class="t-item"><div class="time">16:50</div><div class="activity">抵達 TPE</div></div><div class="t-item"><div class="time">17:50–19:00</div><div class="activity">桃園機場 → 永和福和路</div><div class="transport">有接機／包車最輕鬆；否則機捷 A1＋Taxi。</div></div></div></div></article>
+</div></section>
+<section id="stay"><div class="section-head"><div><h2 class="section-title">住宿與行李策略</h2><div class="section-note">換飯店日的核心是「大行李不跟著逛」</div></div></div><div class="grid grid-2"><div class="card"><h3>🏯 12/11–12/13｜Hotel Mondonce Kyoto Gojo</h3><p>228-1 Tawaraya-cho, Shimogyo Ward, Kyoto 600-8070</p><p><b>入住：</b>15:00 起　<b>退房：</b>10:00 前</p><p><b>行李：</b>12/13 退房後將全部大型行李寄在飯店，清水寺與錦市場只帶隨身小包＋推車。</p></div><div class="card"><h3>🏙️ 12/13–12/16｜ESLEAD HOTEL Osaka Nipponbashi</h3><p>5-12-6 Nipponbashi, Naniwa-ku, Osaka 556-0005</p><p><b>入住：</b>16:00 起　<b>退房：</b>10:00 前</p><p><b>交通：</b>Osaka Metro 堺筋線「惠美須町站」1-B 出口步行約 1 分鐘。</p></div></div><div class="card" style="margin-top:16px"><h3>👘 12/12 MOCOMOCO 行李／衣物</h3><p>嵐山日不帶大型行李。換和服時自己的便服可留在 MOCOMOCO；手機、錢包、護照、ICOCA 等貴重物品隨身。推車依孩子下午是否需要午睡決定帶走或寄放。</p></div></section>
+<section id="transport"><div class="section-head"><div><h2 class="section-title">交通快速卡</h2><div class="section-note">家人臨時查路線時看這張最快</div></div></div><table class="info-table"><thead><tr><th>區間</th><th>建議路線</th><th>預估時間</th></tr></thead><tbody><tr><td>KIX → 京都</td><td>JR 關空特急 HARUKA</td><td>約 75 分</td></tr><tr><td>京都飯店 → 嵐山</td><td>五條 → 京都（地下鐵）→ JR 嵯峨嵐山 → 步行 MOCOMOCO</td><td>約 40–50 分</td></tr><tr><td>嵐山小火車</td><td>Torokko 嵯峨 11:02 → Torokko 龜岡 11:25</td><td>23 分</td></tr><tr><td>京都 → ESLEAD</td><td>五條 → 四條／烏丸 → 阪急京都線 → 淡路（視班次）→ 堺筋線惠美須町</td><td>約 80–90 分</td></tr><tr><td>ESLEAD → 梅田</td><td>惠美須町 → 南森町 → 東梅田</td><td>約 25–35 分</td></tr><tr><td>ESLEAD → USJ</td><td>新今宮 → 西九條 → Universal City（JR）</td><td>約 25–35 分＋步行</td></tr><tr><td>ESLEAD → KIX</td><td>新今宮 → 關西機場（南海 Rapi:t／空港急行）</td><td>約 40–50 分含候車</td></tr></tbody></table></section>
+<section id="booking"><div class="section-head"><div><h2 class="section-title">優先預約與行前確認</h2><div class="section-note">有日期的事情先鎖起來</div></div></div><table class="info-table"><thead><tr><th>項目</th><th>建議時間</th><th>狀態／備註</th></tr></thead><tbody><tr><td>MOCOMOCO 嵐山本店</td><td>12/12 09:00</td><td>已決定店家；預約時填成人／兒童人數、兒童身高、髮型需求。</td></tr><tr><td>嵯峨野小火車</td><td>12/12 11:02 嵯峨→龜岡</td><td>個人票於乘車日前 1 個月 00:00 開賣；建議 11/12 處理。</td></tr><tr><td>USJ Studio Pass</td><td>12/15</td><td>確認票種與入園 QR Code。</td></tr><tr><td>USJ Express Pass（若買）</td><td>12/15</td><td>以 Super Nintendo World／親子可玩的設施時段優先。</td></tr><tr><td>HARUKA</td><td>12/11 KIX→京都</td><td>建議事先準備票券，抵達後依入境速度搭最近一班。</td></tr><tr><td>南海 Rapi:t</td><td>12/16 新今宮→KIX</td><td>等 12 月班表確定後再鎖定指定席。</td></tr></tbody></table><div class="notice" style="margin-top:16px"><b>行前 14 天再確認：</b>CI152／CI153 最終航廈與時間、12/11 HARUKA 班次、12/12 小火車增班／停駛、12/15 USJ 開閉園時間與 Show Schedule、12/16 Rapi:t 班次、京都／大阪天氣與降雨。</div></section>
+<section id="checklist"><div class="section-head"><div><h2 class="section-title">每天出門前清單</h2><div class="section-note">可直接在手機上打勾</div></div></div><div class="checklist"><label class="check"><input type="checkbox"><span>護照（換飯店／機場日務必帶；一般觀光日成人也建議隨身）</span></label><label class="check"><input type="checkbox"><span>手機＋行動電源＋充電線</span></label><label class="check"><input type="checkbox"><span>ICOCA／交通支付方式＋少量日圓現金</span></label><label class="check"><input type="checkbox"><span>兒童水壺、零食、濕紙巾、替換衣物</span></label><label class="check"><input type="checkbox"><span>推車＋雨罩／保暖毯</span></label><label class="check"><input type="checkbox"><span>景點 QR Code／預約畫面離線截圖</span></label><label class="check"><input type="checkbox"><span>12 月保暖：帽子、圍巾、暖暖包</span></label><label class="check"><input type="checkbox"><span>和服日：薄內搭，不要穿太厚影響著裝</span></label></div></section>
+<section><div class="section-head"><div><h2 class="section-title">每日步行量</h2><div class="section-note">體力安排參考</div></div></div><div class="grid grid-3"><div class="card"><h3>12/11｜3–5 km</h3><p>抵達日保守安排。</p></div><div class="card"><h3>12/12｜6–7 km</h3><p>和服＋小火車，下午讓孩子使用推車。</p></div><div class="card"><h3>12/13｜7–9 km</h3><p>清水寺石板坡多，上山段優先 Taxi。</p></div><div class="card"><h3>12/14｜6–8 km</h3><p>梅田室內多，可安排午休。</p></div><div class="card"><h3>12/15｜10–14 km</h3><p>USJ 全程推車＋固定休息時段。</p></div><div class="card"><h3>12/16｜2–4 km</h3><p>以機場移動為主。</p></div></div></section>
 </main>
-
-<footer class="footer">
-  🍁 京阪楓葉親子行・2026<br>
-  本頁依目前確認的行程版本整理；12 月鐵路班次、USJ 營業時間及航班資訊請於行前再次確認。
-</footer>
-
+<footer class="footer">🍁 京阪楓葉親子行・2026<br>本頁依目前確認的行程版本整理；12 月鐵路班次、USJ 營業時間及航班資訊請於行前再次確認。</footer>
 <button class="backtop" aria-label="回到頂端">↑</button>
-
 <script>
-const menuBtn=document.querySelector('.menu-toggle');
-const navLinks=document.querySelector('.nav-links');
-menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
-document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
-
-document.querySelectorAll('.day-toggle').forEach(btn=>{
-  btn.addEventListener('click',()=>btn.closest('.day-card').classList.toggle('open'));
-});
-
-const back=document.querySelector('.backtop');
-window.addEventListener('scroll',()=>{
-  back.classList.toggle('show',window.scrollY>500);
-  const sections=[...document.querySelectorAll('main section[id]')];
-  let current='';
-  sections.forEach(s=>{ if(window.scrollY>=s.offsetTop-120) current=s.id; });
-  document.querySelectorAll('.nav-links a').forEach(a=>{
-    a.classList.toggle('active',a.getAttribute('href')==='#'+current);
-  });
-});
-back.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
-
-// Persist checklist locally on the same device/browser
-const checks=[...document.querySelectorAll('.check input')];
-checks.forEach((c,i)=>{
-  c.checked=localStorage.getItem('keihan-check-'+i)==='1';
-  c.addEventListener('change',()=>localStorage.setItem('keihan-check-'+i,c.checked?'1':'0'));
-});
+const menuBtn=document.querySelector('.menu-toggle');const navLinks=document.querySelector('.nav-links');menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));document.querySelectorAll('.day-toggle').forEach(btn=>{btn.addEventListener('click',()=>btn.closest('.day-card').classList.toggle('open'))});const back=document.querySelector('.backtop');window.addEventListener('scroll',()=>{back.classList.toggle('show',window.scrollY>500);const sections=[...document.querySelectorAll('main section[id]')];let current='';sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id});document.querySelectorAll('.nav-links a').forEach(a=>{a.classList.toggle('active',a.getAttribute('href')==='#'+current)})});back.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));const checks=[...document.querySelectorAll('.check input')];checks.forEach((c,i)=>{c.checked=localStorage.getItem('keihan-check-'+i)==='1';c.addEventListener('change',()=>localStorage.setItem('keihan-check-'+i,c.checked?'1':'0'))});
 </script>
 </body>
 </html>
